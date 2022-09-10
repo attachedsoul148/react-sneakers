@@ -1,0 +1,162 @@
+.content {
+    padding: 40px;
+
+    .contentHeader {
+        h1 {
+            margin: 0px;
+        }
+    }
+}
+
+.noOrders {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        margin: 0px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        margin: 10px 0px;
+        color: #000000;
+
+        opacity: 0.4;
+    }
+
+    button {
+        margin-top: 20px;
+        width: 325px;
+        height: 55px;
+        border: none;
+        background: #9DD558;
+        border-radius: 18px;
+        transition: 0.3s;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #FFFFFF;
+        position: relative;
+
+        img {
+            position: absolute;
+            left: 40px;
+            top: 21px;
+            transition: 0.2s;
+        }
+
+        &:hover {
+            background: lighten($color: #9DD558, $amount: 10%);
+
+            img {
+                transform: translateX(-10px);
+            }
+        }
+
+        &:active {
+            background: darken($color: #9DD558, $amount: 10%);
+        }
+    }
+
+    ;
+}
+
+.card {
+    margin-top: 40px;
+    width: 210px;
+    height: 260px;
+    background: #FFFFFF;
+    border: 1px solid #eaeaea;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: 0.2s;
+
+    &:hover {
+        box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.08);
+        transform: translateY(-10px);
+    }
+
+    h5 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        width: 150px;
+        color: #000000;
+    }
+
+    button {
+        width: 32px;
+        height: 32px;
+        background: #FFFFFF;
+        border: 1px solid #eaeaea;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .cardBottom {
+        width: 210px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        span {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 13px;
+            text-transform: uppercase;
+            color: #BDBDBD;
+        }
+
+        .cardInfo {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                color: #000000;
+                margin: 0px;
+            }
+        }
+    }
+}
+
+.likedButton {
+    position: absolute;
+    cursor: pointer;
+    top: 19px;
+    left: 20px;
+    opacity: 0.5;
+    transition: 0.2s;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.sneakers {
+    width: 1000px;
+    overflow: visible;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    gap: 53px;
+}
